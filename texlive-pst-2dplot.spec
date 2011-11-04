@@ -49,6 +49,7 @@ environment with commands similar to MATLAB for plotting.
 %doc %{_texmfdistdir}/doc/generic/pst-2dplot/data3.dat
 %doc %{_texmfdistdir}/doc/generic/pst-2dplot/pst-2dplot-doc.pdf
 %doc %{_texmfdistdir}/doc/generic/pst-2dplot/pst-2dplot-doc.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -59,3 +60,5 @@ environment with commands similar to MATLAB for plotting.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
