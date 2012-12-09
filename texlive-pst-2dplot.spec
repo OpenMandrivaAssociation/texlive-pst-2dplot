@@ -50,3 +50,17 @@ environment with commands similar to MATLAB for plotting.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.5-2
++ Revision: 755153
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.5-1
++ Revision: 719326
+- texlive-pst-2dplot
+- texlive-pst-2dplot
+- texlive-pst-2dplot
+- texlive-pst-2dplot
+
