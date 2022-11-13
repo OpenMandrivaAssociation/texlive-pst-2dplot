@@ -1,18 +1,12 @@
-# revision 15878
-# category Package
-# catalog-ctan /graphics/pstricks/contrib/pst-2dplot
-# catalog-date 2006-12-31 09:43:01 +0000
-# catalog-license lppl
-# catalog-version 1.5
 Name:		texlive-pst-2dplot
-Version:	1.5
-Release:	11
+Version:	15878
+Release:	1
 Summary:	A PSTricks package for drawing 2D curves
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-2dplot
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-2dplot.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-2dplot.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-2dplot.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-2dplot.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ intuitive tool for plotting 2-d curves. It defines an
 environment with commands similar to MATLAB for plotting.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -43,24 +37,10 @@ environment with commands similar to MATLAB for plotting.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.5-2
-+ Revision: 755153
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.5-1
-+ Revision: 719326
-- texlive-pst-2dplot
-- texlive-pst-2dplot
-- texlive-pst-2dplot
-- texlive-pst-2dplot
-
