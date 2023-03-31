@@ -1,6 +1,6 @@
 Name:		texlive-pst-2dplot
 Version:	15878
-Release:	1
+Release:	2
 Summary:	A PSTricks package for drawing 2D curves
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-2dplot
