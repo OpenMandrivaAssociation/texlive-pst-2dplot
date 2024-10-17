@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	A PSTricks package for drawing 2D curves
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-2dplot
+URL:		https://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-2dplot
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-2dplot.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-2dplot.doc.r%{version}.tar.xz
